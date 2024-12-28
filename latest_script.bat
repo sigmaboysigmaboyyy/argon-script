@@ -176,6 +176,24 @@ if /I "%openWebsite%"=="Y" (
     echo ----------------------------------------
 )
 
+echo Running system health checks...
+
+echo Checking component store corruption...
+DISM /Online /Cleanup-Image /CheckHealth
+echo Component store corruption check completed.
+
+echo Scanning component store for corruption...
+DISM /Online /Cleanup-Image /ScanHealth
+echo Component store corruption scan completed.
+
+echo Verifying component store corruption...
+DISM /Online /Cleanup-Image /VerifyHealth
+echo Component store corruption verification completed.
+
+echo Restoring component store health...
+DISM /Online /Cleanup-Image /RestoreHealth
+echo Component store health restored.
+
 echo Running system file checker...
 sfc /scannow
 echo System file check completed.
