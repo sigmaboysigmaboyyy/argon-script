@@ -63,7 +63,9 @@ pause
 
 curl -L %NET_FRAMEWORK% -o "%DOWNLOAD_DIR%\net48-installer.exe"
 echo net48-installer.exe downloaded.
-echo This may take up to 5 minutes or more. Please be patient.
+echo ****************************************
+echo * THIS MAY TAKE UP TO 5 MINUTES OR MORE. PLEASE BE PATIENT. *
+echo ****************************************
 echo ----------------------------------------
 pause
 
@@ -103,7 +105,9 @@ pause
 
 start /wait "" "%DOWNLOAD_DIR%\net48-installer.exe" /quiet /norestart
 echo net48-installer.exe installed.
-echo This may take up to 5 minutes or more. Please be patient.
+echo ****************************************
+echo * THIS MAY TAKE UP TO 5 MINUTES OR MORE. PLEASE BE PATIENT. *
+echo ****************************************
 echo ----------------------------------------
 pause
 
@@ -149,12 +153,6 @@ echo [argon fixer] Fixing...
 del /q /s "%localappdata%\Roblox" >nul 2>&1
 del /q /s "%appdata%\Roblox" >nul 2>&1
 echo ----------------------------------------
-pause
-
-echo Flushing DNS...
-ipconfig /flushdns
-echo DNS cache flushed.
-echo ========================================
 pause
 
 echo Installing Roblox...
@@ -225,6 +223,12 @@ pause
 echo Running system file checker...
 sfc /scannow
 echo System file check completed.
+echo ========================================
+pause
+
+echo Flushing DNS...
+ipconfig /flushdns
+echo DNS cache flushed.
 echo ========================================
 pause
 
