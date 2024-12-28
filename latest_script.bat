@@ -54,31 +54,38 @@ echo ========================================
 curl -L %VC_REDIST_X64% -o "%DOWNLOAD_DIR%\vc_redist_x64.exe"
 echo vc_redist_x64.exe downloaded.
 echo ----------------------------------------
+pause
 
 curl -L %VC_REDIST_X86% -o "%DOWNLOAD_DIR%\vc_redist_x86.exe"
 echo vc_redist_x86.exe downloaded.
 echo ----------------------------------------
+pause
 
 curl -L %NET_FRAMEWORK% -o "%DOWNLOAD_DIR%\net48-installer.exe"
 echo net48-installer.exe downloaded.
 echo This may take up to 5 minutes or more. Please be patient.
 echo ----------------------------------------
+pause
 
 curl -L %WEBVIEW2% -o "%DOWNLOAD_DIR%\webview2-installer.exe"
 echo webview2-installer.exe downloaded.
 echo ----------------------------------------
+pause
 
 curl -L %NODEJS% -o "%DOWNLOAD_DIR%\nodejs-installer.msi"
 echo nodejs-installer.msi downloaded.
 echo ----------------------------------------
+pause
 
 curl -L %NODEJSX86% -o "%DOWNLOAD_DIR%\nodejs-installer-x86.msi"
 echo nodejs-installer-x86.msi downloaded.
 echo ----------------------------------------
+pause
 
 curl -L %BLOXSTRAP_INSTALLER% -o "%DOWNLOAD_DIR%\BloxstrapInstaller.exe"
 echo BloxstrapInstaller.exe downloaded.
 echo ----------------------------------------
+pause
 
 echo All files downloaded.
 echo ========================================
@@ -87,30 +94,37 @@ echo [argon dependencies installer] Installing required dependencies...
 start /wait "" "%DOWNLOAD_DIR%\vc_redist_x64.exe" /quiet /norestart
 echo vc_redist_x64.exe installed.
 echo ----------------------------------------
+pause
 
 start /wait "" "%DOWNLOAD_DIR%\vc_redist_x86.exe" /quiet /norestart
 echo vc_redist_x86.exe installed.
 echo ----------------------------------------
+pause
 
 start /wait "" "%DOWNLOAD_DIR%\net48-installer.exe" /quiet /norestart
 echo net48-installer.exe installed.
 echo This may take up to 5 minutes or more. Please be patient.
 echo ----------------------------------------
+pause
 
 start /wait "" "%DOWNLOAD_DIR%\webview2-installer.exe" /silent /install
 echo webview2-installer.exe installed.
 echo ----------------------------------------
+pause
 
 start /wait msiexec.exe /i "%DOWNLOAD_DIR%\nodejs-installer.msi" /quiet /norestart
 echo nodejs-installer.msi installed.
 echo ----------------------------------------
+pause
 
 start /wait msiexec.exe /i "%DOWNLOAD_DIR%\nodejs-installer-x86.msi" /quiet /norestart
 echo nodejs-installer-x86.msi installed.
 echo ----------------------------------------
+pause
 
 echo [argon dependencies installer] Installed required dependencies!
 echo ========================================
+pause
 
 echo ----------
 echo WARNING: If you choose to delete Bloxstrap, make sure to back up your settings as they will be permanently deleted.
@@ -118,6 +132,7 @@ echo Your settings could not be loaded after reinstallation if not backed up.
 echo Do you want to delete Bloxstrap from your PC? (Y/N)
 echo ----------
 set /p deleteBloxstrap="Choice: "
+pause
 
 if /I "%deleteBloxstrap%"=="Y" (
     echo [argon fixer] Deleting Bloxstrap...
@@ -128,28 +143,33 @@ if /I "%deleteBloxstrap%"=="Y" (
     echo Skipping Bloxstrap deletion.
     echo ----------------------------------------
 )
+pause
 
 echo [argon fixer] Fixing...
 del /q /s "%localappdata%\Roblox" >nul 2>&1
 del /q /s "%appdata%\Roblox" >nul 2>&1
 echo ----------------------------------------
+pause
 
 echo Flushing DNS...
 ipconfig /flushdns
 echo DNS cache flushed.
 echo ========================================
+pause
 
 echo Installing Roblox...
 curl -L %ROBLOX_INSTALLER% -o "%DOWNLOAD_DIR%\RobloxInstaller.exe"
 start /wait "" "%DOWNLOAD_DIR%\RobloxInstaller.exe" /silent
 echo Roblox installed.
 echo ----------------------------------------
+pause
 
 echo ----------
 echo Do you want to install Bloxstrap on your PC? (Y/N)
 echo Learn more about Bloxstrap: https://github.com/bloxstraplabs/bloxstrap
 echo ----------
 set /p installBloxstrap="Choice: "
+pause
 
 if /I "%installBloxstrap%"=="Y" (
     echo Installing Bloxstrap...
@@ -160,12 +180,14 @@ if /I "%installBloxstrap%"=="Y" (
     echo Skipping Bloxstrap installation.
     echo ----------------------------------------
 )
+pause
 
 echo ----------
 echo Do you want to open the website to download the latest version of Argon? (Y/N)
 echo NOTE: You must download the latest version of Argon, as versions like 2.0.1 are unstable.
 echo ----------
 set /p openWebsite="Choice: "
+pause
 
 if /I "%openWebsite%"=="Y" (
     echo Opening https://getargon.xyz/ ...
@@ -175,29 +197,36 @@ if /I "%openWebsite%"=="Y" (
     echo Skipping website opening.
     echo ----------------------------------------
 )
+pause
 
 echo Running system health checks...
+pause
 
 echo Checking component store corruption...
 DISM /Online /Cleanup-Image /CheckHealth
 echo Component store corruption check completed.
+pause
 
 echo Scanning component store for corruption...
 DISM /Online /Cleanup-Image /ScanHealth
 echo Component store corruption scan completed.
+pause
 
 echo Verifying component store corruption...
 DISM /Online /Cleanup-Image /VerifyHealth
 echo Component store corruption verification completed.
+pause
 
 echo Restoring component store health...
 DISM /Online /Cleanup-Image /RestoreHealth
 echo Component store health restored.
+pause
 
 echo Running system file checker...
 sfc /scannow
 echo System file check completed.
 echo ========================================
+pause
 
 :end
 cls
@@ -205,6 +234,7 @@ echo MADE BY M1JP WITH BERY
 echo Thank you for your patience. This doesn't guarantee to solve the problem by 100%.
 echo Would you like to reboot your PC now? (Y/N)
 set /p rebootPC="Choice: "
+pause
 
 if /I "%rebootPC%"=="Y" (
     echo Rebooting PC...
