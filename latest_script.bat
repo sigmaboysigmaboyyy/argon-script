@@ -28,7 +28,7 @@ set "WEBVIEW2=https://go.microsoft.com/fwlink/p/?LinkId=2124703"
 set "ROBLOX_INSTALLER=https://setup.rbxcdn.com/RobloxPlayerLauncher.exe"
 set "NODEJS=https://nodejs.org/dist/v20.8.0/node-v20.8.0-x64.msi"
 set "NODEJSX86=https://nodejs.org/dist/v20.8.0/node-v20.8.0-x86.msi"
-set "BLOXSTRAP_INSTALLER=https://github.com/bloxstraplabs/bloxstrap/releases/download/v2.8.4/Bloxstrap-v2.8.4.exe"
+set "BLOXSTRAP_INSTALLER=https://github.com/bloxstraplabs/bloxstrap/releases/download/v2.8.5/Bloxstrap-v2.8.5.exe"
 
 echo Download URLs set.
 echo ========================================
