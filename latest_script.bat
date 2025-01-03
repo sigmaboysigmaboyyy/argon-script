@@ -38,4 +38,6 @@ echo.
 echo ================================================
 echo                    END OF NOTICE
 echo ================================================
+echo ->>> the argon itself isnt the problem
+echo ->>> the managment there is
 pause
