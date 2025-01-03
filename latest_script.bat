@@ -16,7 +16,7 @@ echo.
 echo ------------------------------------------------
 echo I hope this message prompts a reconsideration of Argon as a community (in what way? think yourself),
 echo since I have never got so much stress in 1 week, waking up to check my phone,
-echo if i got demoted for nothing, and such was hapenning almost whole career path,
+echo if i get demoted for nothing (THAT EVEN WAS HAPPENING BEFORE ANY OF CONFLICTS!!!!!), and such was hapenning almost whole "career path",
 echo -----
 echo STRESS, STRESS AND AGAIN STRESS
 echo -----
