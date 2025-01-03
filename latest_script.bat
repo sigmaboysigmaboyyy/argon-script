@@ -14,7 +14,7 @@ echo Despite my best efforts, the Russo-Ukrainian war took a toll on my mental h
 echo And I'm sincerely sorry for these moments to happen.
 echo.
 echo ------------------------------------------------
-echo I hope this message prompts a reconsideration of Argon as a community,
+echo I hope this message prompts a reconsideration of Argon as a community (in what way? think yourself),
 echo since I have never got so much stress in 1 week, waking up to check my phone,
 echo if i got demoted for nothing, and such was hapenning almost whole career path,
 echo -----
