@@ -22,7 +22,7 @@ echo STRESS, STRESS AND AGAIN STRESS
 echo -----
 echo I have spent many time on that server, having nothing, gave everything to support members, yet, no one gives a fuck... ABDU and others are vindictive people there.
 echo Many staff members do nothing on Argon, and I was bullied by Ven and Rapid simply for helping others and being promoted quickly. (which is ridiculous, right?)
-echo Abdu told me to share all of the problems to his DMs, but recently told me to "shut the fuck up, crying baby." and demoted for that...
+echo Abdu told me to share all of the problems to his DMs, but recently told me to "shut the fuck up, crying baby." and abdu demoted for TELLING(???) that rapid over again rage baited me or type shit after he was demoted to mod?...
 echo ------------------------------------------------
 echo I see no point in staying with Argon anymore.
 echo Management doesn't care, allowing a staff member to leave after being bullied over 72 times for no reason. (and I was the only person who noticed that, and helped...)
